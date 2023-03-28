@@ -26,6 +26,8 @@ function main(){
     }else{
         console.log('ERRO! Coloque valor de ângulo maior que 0.')
     }
+}
+main()
 
 function verificar_tipo(a1,a2,a3){
     if (a1 < 90 && a2 < 90 && a3 < 90){
@@ -36,6 +38,3 @@ function verificar_tipo(a1,a2,a3){
         return ('O triângulo é OBTUSÂNGULO')
     }
 }
-
-}
-main()
