@@ -24,6 +24,8 @@ function main() {
     }else{
         console.log('ERRO! Tente novamente com lado maior que 0.')
     }
+}
+main()
 
 function verificar_tipo(l1,l2,l3){
     if ( l1 === l2 && l1 === l3){
@@ -37,9 +39,3 @@ function verificar_tipo(l1,l2,l3){
     }
     
 }
-
-
-
-}
-
-main()
