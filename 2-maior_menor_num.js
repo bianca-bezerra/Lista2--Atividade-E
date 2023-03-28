@@ -4,17 +4,15 @@ import { question } from "readline-sync";
 
 function main(){
 
-//Entrada
+
 const num1 = Number(question('Numero 1:'))
 const num2 = Number(question('Numero 2:'))
 
-//Processamento
 const situacao = verificar_menor_maior(num1,num2)
 
-//Saída 
 console.log(situacao)
-
-//Funções
+}
+main()
 
 function verificar_menor_maior(num1,num2){
     if (num1 > num2){
@@ -24,5 +22,3 @@ function verificar_menor_maior(num1,num2){
         return  (`${num2} é o maior e o ${num1} é o menor`)
     }
 }
-}
-main()
