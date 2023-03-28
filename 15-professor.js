@@ -10,6 +10,12 @@ function main(){
     const titulo2 = console.log('>> Professor 2 <<')
     const hora2 = Number(question('Qtd. de horas dadas:'))
     const valor2 = Number(question('Valor por hora:'))
+    
+    const resultado = maiorSalario(hora1,valor1,hora2,valor2)
+   console.log(resultado)
+
+}
+main()
 
     function calcular_salario(hora,valor){
         const salario = hora * valor
@@ -27,8 +33,4 @@ function main(){
         return (`Professor 2 recebe salário maior que o professor 1`)
     }
    }
-   const resultado = maiorSalario(hora1,valor1,hora2,valor2)
-   console.log(resultado)
-
-}
-main()
+   
