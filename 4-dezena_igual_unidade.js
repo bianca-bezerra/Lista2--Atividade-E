@@ -5,16 +5,14 @@ import { question } from "readline-sync";
 
 function main(){
 
-//Entrada
 const numero = Number(question('Numero (2 digitos):'))
 
-//Processamento
 const verificação = verificar_dezena_unidade(numero)
 
-//Saída
 console.log(verificação)
+}
+main()
 
-//Função
 function verificar_dezena_unidade(numero){
     if (Math.floor(numero/10) === numero % 10){
         return (`Algarismo de dezena e de unidade são iguais`)
@@ -22,5 +20,3 @@ function verificar_dezena_unidade(numero){
         return (`Algarismo de dezena e de unidade são diferentes`)
     }
 }
-}
-main()
