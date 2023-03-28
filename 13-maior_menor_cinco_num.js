@@ -10,7 +10,17 @@ function main(){
     const num3 = Number(question('Número 3:'))
     const num4 = Number(question('Número 4:'))
     const num5 = Number(question('Número 5:'))
+    
+ if (is_valid(num1,num2,num3,num4,num5)){
+        const maiorMenor = maior_menor(num1,num2,num3,num4,num5)
+        console.log(maiorMenor)
+    } else{
+        console.log('Números inválidos.')
+    }
+}
 
+main()
+    
     function is_valid(n1,n2,n3,n4,n5){
         if (n1 !== n2 && n1 !== n3 && n1 !== n4 && n1 !== n5 && n2 !== n3 && n2 !== n4 && n2 !== n5 && n3 !== n4 && n3 !== n5 && n4 !== n5){
             return true;
@@ -50,12 +60,4 @@ function main(){
         return `O maior número é ${maior} e o menor número é ${menor}.`
     }
 
-    if (is_valid(num1,num2,num3,num4,num5)){
-        const maiorMenor = maior_menor(num1,num2,num3,num4,num5)
-        console.log(maiorMenor)
-    } else{
-        console.log('Números inválidos.')
-    }
-}
-
-main()
+   
