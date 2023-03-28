@@ -11,6 +11,12 @@ const num1 = Number(question('Número 1:'))
 const num2 = Number(question('Número 2:'))
 const num3 = Number(question('Número 3:'))
 
+const apresentar = imprimir_numeros(opção,num1,num2,num3)
+console.log(apresentar)
+
+}
+main()
+
 
 function imprimir_numeros(opção,num1,num2,num3){
     if (opção === 1){
@@ -22,8 +28,3 @@ function imprimir_numeros(opção,num1,num2,num3){
         return (`${num3}`)
     }
 }
-const apresentar = imprimir_numeros(opção,num1,num2,num3)
-console.log(apresentar)
-
-}
-main()
