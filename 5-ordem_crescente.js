@@ -9,9 +9,9 @@ function main(){
     
     const numeros_ordenados = ordenar(num_a, num_b, num_c)
 
-    console.log(numeros_ordenados)
-    
+    console.log(numeros_ordenados)   
 }
+main()
 
 function ordenar(num_a, num_b, num_c){
     if (o_menor_de_todos(num_a, num_b, num_c)){ 
@@ -40,4 +40,3 @@ function o_menor_de_todos(num, num_1, num_2){
     return num <= num_1 && num <= num_2
 }
 
-main()
