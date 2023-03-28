@@ -10,16 +10,19 @@ const num3 = Number(question('Numero 3:'))
 const num4 = Number(question('Numero 4:'))
 const num5 = Number(question('Numero 5:'))
 
-function calcular_media(n1,n2,n3,n4,n5){
-    const media = ((n1 + n2 + n3 + n4 + n5)/5)
-    return media
-}
 const media = calcular_media(num1,num2,num3,num4,num5)
 
 console.log(`A média dos números é ${media}`)
 
 console.log(`>>> Os números maiores que a média são:`)
+    
+}
+main()
 
+function calcular_media(n1,n2,n3,n4,n5){
+    const media = ((n1 + n2 + n3 + n4 + n5)/5)
+    return media
+}
 
 function verificar_num_maior_qamedia(numero){
     if (numero > media){
@@ -48,5 +51,3 @@ if (verificar_num_maior_qamedia(num5,media)){
     console.log(num5)
     
 }
-}
-main()
