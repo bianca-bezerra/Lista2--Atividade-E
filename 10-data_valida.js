@@ -14,8 +14,10 @@ const data_valida = verificar_data_valida(dia,mes,ano)
 
 //Saída
 console.log(data_valida)
+    
+}
+main()    
 
-//Função usada
 function verificar_data_valida(dia,mes,ano){
     if (dia <= 30 && mes <= 12 && 0<ano ){
         return 'Válido'
@@ -23,5 +25,3 @@ function verificar_data_valida(dia,mes,ano){
         return 'Inválido'
     }
 }
-}
-main()
