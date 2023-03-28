@@ -13,6 +13,10 @@ function main() {
   const dia2 = Number(question('Dia:'))
   const mes2 = Number(question('Mês:'))
   const ano2 = Number(question('Ano:'))
+  
+ const idade = calcular_idade(ano, ano2)
+  
+  console.log(`Sua idade é ${idade}`)
 
   if (dia <= 0 || dia > 31 || dia2 <= 0 || dia2 > 31) {
     console.log('Data inválida.')
@@ -26,15 +30,13 @@ function main() {
     console.log('Data inválida')
     return
   }
+  }
+
+main()
 
   function calcular_idade(ano, ano2){
     const a_idade = ano - ano2
     return a_idade
   }
     
-  const idade = calcular_idade(ano, ano2)
-  
-  console.log(`Sua idade é ${idade}`)
-}
-
-main()
+ 
