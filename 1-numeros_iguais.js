@@ -12,8 +12,10 @@ const numero3 = (question('Numero 3:'))
 const numeros_iguais = verificar_num_iguais(numero1,numero2,numero3)
 
 console.log(numeros_iguais)
+    
+}
+main()
 
-//Função usada
 function verificar_num_iguais(n1,n2,n3){
     if ( n1 === n2 && n1 === n3){
         return (`Todos os números são iguais`)   // verifica se todos são iguais a princípio
@@ -31,5 +33,4 @@ function verificar_num_iguais(n1,n2,n3){
         return (`Não existe números iguais`)
     } 
 }
-    }
-main()
+    
